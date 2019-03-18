@@ -1,9 +1,17 @@
-/*
-* Third Party
-*/
+//*********************************************
+//		Assets
+//*********************************************
 @import "../../bower_components/normalize.css/normalize.css";
+@import "blocks/_base/fonts.scss";
+@import "blocks/_base/mixin.scss";
+@import "blocks/_base/variables.scss";
+//*********************************************
+//		Blocks
+//*********************************************
 
-/*
-* Custom
-*/
-@import "partials/app";
+@import "blocks/header/header.scss";
+
+//*********************************************
+//		MEDIA QUERIES
+//*********************************************
+@import "blocks/_base/media.scss";

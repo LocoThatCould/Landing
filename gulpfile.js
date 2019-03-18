@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
+    cache = require("gulp-cache"),
     reload = browserSync.reload;
 
     var path = {
@@ -43,9 +44,11 @@ var config = {
     server: {
         baseDir: "./build"
     },
+    /*
     tunnel: true,
-    host: 'localhost',
-    port: 3306,
+    host: 'localhost', //Была ошибка на tunnel.. disconnect, check your firewall..
+    port: 3307,
+    */
     logPrefix: "Frontend_Devil"
 };
 
@@ -67,7 +70,7 @@ gulp.task('js:build', function () {
 });
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style) //Выберем наш main.scss
+        gulp.src(path.src.style) //Выберем наш main.scss
         .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass()) //Скомпилируем
         .pipe(prefixer()) //Добавим вендорные префиксы
@@ -79,12 +82,12 @@ gulp.task('style:build', function () {
 
 gulp.task('image:build', function () {
     gulp.src(path.src.img) //Выберем наши картинки
-        .pipe(imagemin({ //Сожмем их
+        .pipe(cache(imagemin({ //Сожмем их
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
-        }))
+        })))
         .pipe(gulp.dest(path.build.img)) //И бросим в build
         .pipe(reload({stream: true}));
 });
@@ -126,6 +129,10 @@ gulp.task('webserver', function () {
 
 gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
+});
+
+gulp.task('clear_cache', function (cb) {
+    return cache.clearAll();
 });
 
 gulp.task('default', ['build', 'webserver', 'watch']);

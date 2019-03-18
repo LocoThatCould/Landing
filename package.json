@@ -8,8 +8,10 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.7",
     "browser-sync": "^2.26.3",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.1.1",
     "gulp-clean-css": "^4.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-rigger": "^0.5.8",

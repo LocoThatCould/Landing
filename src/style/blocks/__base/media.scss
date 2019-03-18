@@ -1,0 +1,620 @@
+/*************************************/
+//           Width:1200px
+/************************************/
+
+@media (max-width:1200px) {
+
+	.about-wrap-image {
+		max-width: 40%;
+	}
+
+	.team-container {
+		&__img {
+			height: 150px;
+			width: 150px;
+
+			&::after {
+				width: 150px;
+				height: 150px;
+			}
+		}
+		&__name {
+			font-size: 1.7rem;
+		}
+
+		&__description {
+			font-size: 1.5rem;
+			line-height: 23px;
+		}
+	}
+	
+	.pricing{
+		margin-left: 3%;
+		&__item{
+			width: 220px;
+		}
+	}
+	
+	.header{
+		padding-top: 40px;
+		height: 800px;
+	}
+	
+	.logo{
+		a{
+			height: 130px;
+			width: 130px;
+			font-size: 3.5rem;
+			line-height: 35px;
+		}
+	}
+	
+	.menu__item{
+		margin-left: 60px;
+		&::after{
+			margin-left: 22px;
+		}
+	}
+	
+	.banner{
+		margin-top: 150px;
+		&__text{
+			font-size: 3.5rem;
+			line-height: 50px;
+			margin-bottom: 60px;
+		.lg{
+			font-size: 5rem;
+			line-height: 50px;
+		}
+		
+		.sm{
+			font-size: 3rem;
+			line-height: 40px;
+		}
+	}
+		.slick-dots{
+			margin-top: 60px;
+		}
+	}
+	
+	.blog-container__item {
+		width: 70%;
+		margin: 0 auto 60px auto;
+	}
+}
+
+@media (min-width:993px){
+	.menu{
+		display: flex !important;
+	}
+}
+
+/*************************************/
+
+//           Width:992px
+/************************************/
+
+@media (max-width:992px) {
+
+	html {
+		font-size: 55%;
+	}
+
+	.menu{
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		padding: 20px 0;
+		background: rgba(0,0,0,.7);
+		z-index: 99;
+		min-width: 170px;
+		margin-top: 15px;
+		&__item{
+			margin-left: 0;
+			&::after{
+				display: none;
+			}
+		}
+		&__link{
+			display: block;
+			padding: 8px 25px;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	
+	.toggle-menu{
+		display: block;
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		width: 35px;
+		cursor: pointer;
+		z-index: 999;
+		span{
+			display: block;
+			height: 3px;
+			background-color: #fff;
+		}
+		
+		span + span{
+			margin-top: 8px;
+		}
+	}
+
+	.heading {
+		margin-bottom: 100px;
+		&__title {
+			width: auto;
+		}
+		&__description {
+			line-height: 18px;
+		}
+	}
+
+	.about-wrap {
+		display: block;
+
+		&-image {
+			max-width: 80%;
+			margin: 30px auto 0 130px;
+
+			&__img {
+				width: 100%;
+			}
+
+			&--skills {
+				max-width: 60%;
+				margin: 30px auto 60px;
+			}
+		}
+	}
+
+	.team-container {
+		flex-wrap: wrap;
+
+		&__item {
+			width: 50%;
+		}
+	}
+
+	.section-info {
+		height: auto;
+		min-height: 550px;
+	}
+	.quote__text {
+		line-height: 45px;
+		padding: 0 49px;
+		font-size: 3.5rem;
+		&::before,
+		&::after {
+			font-size: 9rem;
+		}
+	}
+
+	.info {
+
+		&__icon {
+			width: 140px;
+			height: 140px;
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			.number {
+				font-size: 3.5rem;
+			}
+			.txt {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.service__description {
+		line-height: 22px;
+		margin-top: 15px;
+	}
+	
+	.pricing-container{
+		display: block;
+		text-align: center;
+		
+		.packege-pricing{
+			width: 80%;
+			text-align: center;
+			margin: 0 auto 60px auto;
+			
+			.service__icon{
+				margin-left: auto;
+			}
+		}
+	}
+	
+	.pricing{
+		margin-left: 0;
+		
+		&__item{
+			width: auto;
+			flex: 1;
+		}
+	}
+	
+	.contact-container__info{
+		padding-left: 60px;
+	}
+	
+	.clients-container__item{
+		height: 115px;
+	}
+	
+	.blog-container__item {
+		width: 80%;
+		margin: 0 auto 60px auto;
+	}
+	
+	.portfolio-list__item{
+		width: 33.3%;
+	}
+	
+	.nav-tab-list{
+		margin-bottom: 40px;
+		&__item{
+			margin: 0 10px;
+			&::after{
+				display: none;
+			}
+		}
+		}
+	
+	.tweet__description{
+		padding: 0 140px 10px;
+	}
+
+}
+
+/*************************************/
+
+//           Width:767px
+/************************************/
+
+@media (max-width:767px) {
+
+	.logo{
+		a{
+			height: 100px;
+			width: 100px;
+			font-size: 3rem;
+			line-height: 30px;
+		}
+	}
+	
+	.banner{
+		margin-top: 150px;
+		&__text{
+			font-size: 2.3rem;
+			line-height: 25px;
+			margin-bottom: 60px;
+		.lg{
+			font-size: 3.2rem;
+			line-height: 35px;
+		}
+		
+		.sm{
+			font-size: 2.3rem;
+			line-height: 25px;
+		}
+	}
+	}
+	
+	.heading {
+		display: block;
+		margin-bottom: 50px;
+		&__title {
+			text-align: center;
+			margin-right: 0;
+			&::after {
+				position: static;
+				margin: 20px auto;
+				height: 4px;
+				width: 80%;
+			}
+		}
+		&__description {
+			display: none;
+		}
+	}
+	.section-info {
+		min-height: 450px;
+	}
+
+	.quote__text {
+		line-height: 40px;
+		padding: 0 49px;
+		font-size: 2.8rem;
+		&::before,
+		&::after {
+			font-size: 8rem;
+		}
+	}
+
+	.quote__author {
+		font-size: 2rem;
+
+		&::before {
+			margin-bottom: 15px;
+		}
+	}
+
+	.team-container {
+
+		&__item {
+			width: 80%;
+			margin: 0 auto;
+			border-bottom: 1px solid #eee;
+		}
+	}
+
+	.info {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__item {
+			width: 50%;
+			margin: 15px 0;
+		}
+
+	}
+	
+	.service-container{
+		display: block;
+		&__item{
+			width: 75%;
+			margin: 0 auto 50px auto;
+		}
+	}
+	
+	.pricing{
+		display: block;
+		
+		&__item{
+			width: 80%;
+			margin: 0 auto 20px auto;
+			border: 1px solid #e6e6e6;
+			
+			&:first-child{
+				border-right: 1px solid #e6e6e6;
+				margin-top: 0;
+			}
+			&:last-child{
+				border-left: 1px solid #e6e6e6;
+				margin-top: 0;
+			}
+		}
+	}
+	
+	.review__text{
+		padding: 0 3px;
+		line-height: 24px;
+	}
+	
+	.contact-container{
+		display: block;
+		text-align: center;
+		
+		&__form{
+			margin: 0 auto 30px auto;
+			width: 90%;
+		}
+		
+		&__info{
+			margin: 0 auto;
+			width: 90%;
+			padding: 0;
+		}
+	}
+	
+	.contact-list__item{
+		padding-left: 30px;
+	}
+	
+	.clients-container{
+		display: block;
+		&__item{
+			display: inline-block;
+			vertical-align: middle;
+			padding: 15px;
+			width: 220px;
+			img{
+				margin:auto auto;
+			}
+		}
+	}
+	
+	.footer-flex{
+		flex-direction: column;
+	}
+	
+	.copyright{
+		margin-bottom: 20px;
+		text-align: center;
+		line-height: 20px;
+	}
+	
+	.footer .social__link{
+		font-size: 2.7rem;
+	}
+	
+		.blog-container__item {
+		width: 80%;
+		margin: 0 auto 60px auto;
+	}
+	
+	.portfolio-list__item{
+		width: 50%;
+	}
+	
+	
+	.tweet__description{
+		padding: 0 30px 10px;
+		font-size: 1.8rem;
+	}
+	
+	.tweet__icon{
+		margin-bottom: 18px;
+		width: 70px;
+		height: 70px;
+	}
+	
+	#map{
+		height: 300px;
+	}
+
+}
+
+/*************************************/
+
+//           Width:480px
+/************************************/
+
+@media (max-width:480px) {
+
+	.header{
+		height: 650px;
+		padding-top: 15px;
+	}
+	
+	.banner{
+		margin-top: 100px;
+		&__text{
+			font-size: 2.3rem;
+			line-height: 25px;
+			margin-bottom: 40px;
+		.lg{
+			font-size: 3rem;
+			line-height: 35px;
+			letter-spacing: 0px;
+		}
+		
+		.sm{
+			font-size: 2.3rem;
+			line-height: 25px;
+		}
+	}
+		.slick-dots{
+			margin-top: 40px;
+		}
+	}
+	
+	.about-wrap {
+		&-content {
+			margin-right: 0;
+			&__item {
+				display: block;
+				text-align: center;
+
+				.about-wrap-content__icon {
+					margin: 0 auto 20px;
+				}
+			}
+
+			&--skills {
+				margin: 30px auto 0;
+			}
+
+		}
+
+		&-image {
+			margin: 30px auto 0;
+			max-width: 100%;
+		}
+	}
+
+	.heading__title {
+		&::after {
+			width: 90%;
+		}
+	}
+
+	.container {
+		padding: 20px;
+	}
+
+	.line {
+		margin: 60px 0;
+	}
+
+	.section-info {
+		min-height: 300px;
+		padding: 30px 0;
+	}
+
+	.quote__text {
+		line-height: 24px;
+		font-size: 2rem;
+		margin-bottom: 15px;
+		padding: 0 30px;
+		&::before,
+		&::after {
+			font-size: 6rem;
+		}
+	}
+
+	.quote__author {
+		font-size: 1.8rem;
+
+		&::before {
+			margin-bottom: 15px;
+
+		}
+	}
+
+	.team-container {
+
+		&__item {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+	.info {
+		margin: 30px 0;
+		&__item {
+			width: 80%;
+			margin: 15px 0;
+		}
+
+	}
+	
+	.blog-container{
+		&__item{
+			width: 90%;
+		}
+		
+		&__description 
+			p{
+				font-size: 1.4rem;
+				line-height: 20px;
+			}
+	}
+		
+	.portfolio-list__item{
+		width: 100%;
+	}
+	
+	.tweet__description{
+		padding: 0 15px 10px;
+		font-size: 1.6rem;
+	}
+	
+	.tweet__icon{
+		margin-bottom: 18px;
+		width: 60px;
+		height: 60px;
+		i{
+			font-size: 2.5rem;
+		}
+	}
+
+}
